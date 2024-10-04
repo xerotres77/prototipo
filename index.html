@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Restaurante</title>
+    <style>
+        /* Estilos para modificar el tamaño de la sección de comentarios */
+        #disqus_thread {
+            width: 80%; /* Ajusta el ancho aquí, por ejemplo 80% o en píxeles (px) */
+            height: 500px; /* Ajusta la altura aquí */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.png" alt="">
+                </span>
+                <div class="text logo-text">
+                    <span class="name"></span>
+                    <span class="profession">Menu</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="Contenido/Historia/index.html">
+                            <i class='bx bx-history icon'></i>
+                            <span class="text nav-text">Historia</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Contenido/Carrito/poner index" id="pedidosLink">
+                            <i class='bx bx-cart icon'></i>
+                            <span class="text nav-text"><span class="underline">P</span>edidos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://wa.me/+529371039666">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Contacto</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://maps.app.goo.gl/UgdtCo1UyGpgj9na7">
+                            <i class='bx bx-map icon'></i>
+                            <span class="text nav-text">Ubicacion</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#comentarios">
+                            <i class='bx bx-comment icon'></i>
+                            <span class="text nav-text">Comentarios</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <ul>
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text"><span class="underline">M</span>odo Claro</span>
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <br>
+        <style>
+            .contenedor-imagen {
+                margin-right: -78px; 
+            }
+
+            #contenedor-banner {
+                text-align: center; 
+                margin-bottom: 15px; 
+            }
+
+            #contenedor-imagen {
+                text-align: center; 
+            }
+        </style>
+
+        <!-- Sección de Comentarios -->
+        <div id="comentarios">
+            <h2 style="text-align: center;">Comentarios</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://restaurante-4.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+        <!-- Fin de Sección de Comentarios -->
+
+        <div class="text" style="text-align: center; margin-top: 20px; font-size: 15px;">© 2024 Super Empanadas Inc. All rights reserved.</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
